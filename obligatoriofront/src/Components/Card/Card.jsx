@@ -30,7 +30,12 @@ const Card = ({ nombre, id, descripcion, url_imagen }) => {
         <h2 className="card-title">{nombre}</h2>
         <p>{descripcion}</p>
         {url_imagen && (
-          <img src={url_imagen} alt={nombre} className="card-image" />
+          <img
+            src={url_imagen}
+            alt={nombre}
+            className="card-image"
+            style={{ width: "300px", height: "200px" }}
+          />
         )}
         <div className="card-wrapp-buttons">
           <button className="card-button">Detalle</button>
