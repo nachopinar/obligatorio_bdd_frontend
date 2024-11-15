@@ -21,7 +21,7 @@ const Home = () => {
   };
 
   useEffect(() => {
-    getActividades();
+    refreshActividades();
   }, []);
 
   return (
@@ -34,6 +34,7 @@ const Home = () => {
             key={actividad.id}
             nombre={actividad.nombre}
             id={actividad.id}
+            url_imagen={actividad.url_imagen}
             refreshActividades={refreshActividades}
           />
         ))}
